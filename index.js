@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 const tmi = require("tmi.js");
-const channelName = process.env.USER || "motoko";
+const channelName = process.env.CHANNEL_NAME || "motoko";
 
 const opts = {
   options: {
