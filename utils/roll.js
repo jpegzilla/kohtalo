@@ -12,7 +12,8 @@ module.exports.handleRoll = (message, client, channelName) => {
 
   // minimal error handling:
   // syntax: (Command)(quantity of random numbers needed: number)d(range: number)
-  const syntaxHint = "!roll (quantity)d(range). ex: !roll 1d20";
+  const syntaxHint =
+    "!roll (quantity)d(range) - no spaces before or after the 'd'. ex: !roll 1d20";
 
   if (tokens.length != 2) {
     return client.action(
